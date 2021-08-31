@@ -1,1 +1,0 @@
-<a href='../stagier/stagier_liste.php'>stagier</a>

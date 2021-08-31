@@ -1,0 +1,17 @@
+<?php
+require "../../include/inc_config.php";
+//Application de mysqli_real_escape_string aux données du formulaire
+extract(array_map("mres",$_POST));
+if (isset($btSubmit)) {
+    if ($[pk]==0)
+        $sql="insert into [table] ([listeChamp]) values (null,[listeValeur])";
+    else 
+        $sql="update [table] set [listeChampValeur] where [pk]=$[pk]";
+    $result=mysqli_query($link,$sql);
+    if ($result===false) {
+        echo mysqli_error($link);
+        exit();
+    }
+}
+header("location:[table]_liste.php");
+?>

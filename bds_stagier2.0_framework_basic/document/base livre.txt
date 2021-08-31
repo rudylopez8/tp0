@@ -1,0 +1,62 @@
+﻿Base Livre : application de gestion d'une mediathéque
+
+Un média est caractérisé par un titre et un ou plusieurs auteurs.
+Un média appartient à une catégorie (livre, film, bd, musique, ...etc)
+L'accès à l'application est limité aux personnes authentifiées.
+
+1. MCD
+2. MLD
+
+<MCD> 
+- auteur (entité) : 
+    aut_id : int (pk)
+    aut_nom : chaine
+
+- categorie (entité) : 
+    cat_id : int (pk)
+    cat_label : chaine 
+
+- media (entité) : 
+    med_id : int (pk)
+    med_titre : chaine 
+
+- utilisateur (entité) : 
+    uti_id : int (pk) 
+    uti_login : chaine 
+    uti_mdp : chaine     
+
+créer : 
+    - media : 1, N 
+    - auteur : 1, N 
+
+appartenir : 
+    - media : 1, 1 
+    - categorie : 0, N 
+
+</MCD>
+
+<MLD> 
+- auteur (entité) : 
+    aut_id : int (pk)
+    aut_nom : chaine(100)
+
+- categorie : 
+    cat_id : int (pk)
+    cat_label : chaine(100) 
+
+- media : 
+    med_id : int (pk)
+    med_titre : chaine(100)
+    med_categorie : int (fk)
+
+- utilisateur  : 
+    uti_id : int (pk) 
+    uti_login : chaine(100) 
+    uti_mdp : chaine(500)      
+
+creer : 
+    cre_id : int (pk)
+    cre_auteur : int (fk)
+    cre_media : int (fk)
+
+</MLD>

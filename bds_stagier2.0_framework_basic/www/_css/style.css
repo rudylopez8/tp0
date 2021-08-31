@@ -1,0 +1,158 @@
+body {
+    background-color: #FFF;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    padding:10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+pre#debug {
+    background-color: #CCC;
+    font-size:12px;
+    padding:20px;
+}
+
+.titre {
+    font-size:60px;
+    font-weight: bold;
+    color:#F04;
+}
+
+.soustitre {
+    font-size:30px;
+    font-weight: bold;
+    color:#04F;
+    font-style:oblique ;
+}
+
+header {
+    background-color:#DEF;
+    border:1px solid black;
+    border-radius: 10px 10px 0 0;
+    padding:10px;
+}
+
+nav {
+    background-color:#ADF;
+    padding:10px;
+    border:1px solid black;
+    display:flex;
+    flex-wrap:wrap;
+    /* Disposition du contenu sur une ligne */
+    justify-content:flex-start; 
+}
+
+nav a {
+    width:250px;
+    height:50px;
+    border:5px solid #000;      
+    border-radius: 5px;;  
+    text-align: center;
+    list-style-type: none;
+    background-color:#DFA;    
+    text-decoration: none;
+    color:#345;  
+    padding-top:20px;  
+    margin:10px;
+    font-size:25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color:#4F4;
+    color:#000;    
+    border-style: solid;
+}
+
+nav a:active {
+    background-color:#4F4;
+    border-style:inset;
+}
+
+.actif {
+    background-color:#F44;
+    color:#000;
+    border-style:inset;
+}
+
+#main {
+    background-color: white;
+    border:1px solid #777;
+    padding:10px;
+}
+
+footer {
+    background-color:#000;
+    color:white;
+    text-align: center;
+    height:50px;
+    border:1px solid black;
+    border-radius: 0 0 10px 10px;
+    padding-top:20px;
+    font-weight: bold;
+}
+
+table, td, th {
+    border: 1px solid #666;    
+    border-collapse: collapse;
+    padding:8px;
+}
+
+
+:focus {
+    border:2px dashed red;
+}
+
+#message {
+    font-size:20px;
+    color:red;
+    border:2px inset red;
+    padding:10px;
+    margin:10px;
+}
+
+label {
+    font-weight: bold;
+    color:rgb(14, 40, 105);
+}
+
+#categorie a {
+    border:2px inset #DFA;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #F88;
+}
+
+#produit {
+    background-color:rgb(103, 182, 182);
+    padding:10px;
+    border:1px solid black;
+    display:flex;
+    flex-wrap:wrap;
+    /* Disposition du contenu sur une ligne */
+    justify-content:flex-start; 
+}
+
+#produit div {
+    width:100px;
+    border:5px solid #000;      
+    border-radius: 5px;;  
+    text-align: center;    
+    background-color:#ACE;        
+    color:#345;  
+    padding:10px;  
+    margin:10px;
+    font-size:15px;
+    font-weight: bold;
+}

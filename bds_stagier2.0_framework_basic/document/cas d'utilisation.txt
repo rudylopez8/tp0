@@ -1,0 +1,14 @@
+Site Médiathèque
+----------------
+Barre de Navigation :
+Accueil : page d'accueil qui se décline en 2 cas :
+- utilisateur non authentifié : afficher un formulaire d'authentification
+- utilisateur authentifié : afficher un message de bienvenue
+
+Media : affiche la liste des media avec la catégorie et les auteurs (mettre des liens hypertextes sur chaque auteur pour afficher sa fiche)
+- zone de recherche : recherche en ajax sur le titre
+- filtrage par catégorie
+
+Auteur : affiche la fiche d'un auteur qui comprend la liste des ses oeuvres(lien hypertextes sur chaque oeuvre)
+
+Catégorie : gestion des catégories.
